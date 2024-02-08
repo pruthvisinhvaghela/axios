@@ -12,6 +12,9 @@ const AxiosGet = () => {
       setData(response.data);
     });
   }, []);
+  userData.filter((item) => {
+    return item < 10;
+  });
 
   return (
     <div>
