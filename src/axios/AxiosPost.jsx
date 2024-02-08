@@ -16,6 +16,13 @@ const AxiosPost = () => {
       .then((response) => console.log(response));
   };
 
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    axios
+      .put("https://jsonplaceholder.typicode.com/posts/1", inputData)
+      .then((response) => console.log(response));
+  };
+
   return (
     <div>
       <form>
@@ -38,6 +45,7 @@ const AxiosPost = () => {
         <br />
         <br />
         <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleUpdate}>update</button>
       </form>
     </div>
   );
