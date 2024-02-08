@@ -1,10 +1,13 @@
 import "./App.css";
-import AxiosGet from "./axios/AxiosGet";
+import AxiosPost from "./axios/AxiosPost";
+// import AxiosGet from "./axios/AxiosGet";
 
 function App() {
   return (
     <>
-      <AxiosGet />
+      {/* <AxiosGet /> */}
+
+      <AxiosPost />
     </>
   );
 }
